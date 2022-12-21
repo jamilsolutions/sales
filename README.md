@@ -36,7 +36,17 @@ Sales API project consists a couple of the endpoints to manager customers and ad
 ```bash   
    mvn run
 ```
->Note: 1. If you do not have Maven installed use this link to install:
+>Note: 1. Alternative run
+> Run the application with jar command line:
+> - Enter in the project <project path>/bin forder at 
+> - Run the command:
+> ```bash
+>   java -jar sales-0.0.1-SNAPSHOT.jar
+> ```
+> - MAVEN_HOME=C:/Programas/Apache/apache-maven-3.8.6
+> - PATH=%MAVEN_HOME%/bin
+
+>Note: 2. If you do not have Maven installed use this link to install:
 > - https://maven.apache.org/download.cgi
 > - Unpack at C:/Programas/Java/apache-maven-3.8.6-bin.zip
 > - Create a Variable of Environment to Maven
