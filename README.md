@@ -2,7 +2,7 @@
 
 ### Sales repository
 
-Sales API project consists a couple of the endpoints to manager customers and address like GET /customers, and GET /address and for a technical evaluation using Java Technology with Spring Boot, RESTFUL, build in Maven archetype and persistence with H2 in-memory database.
+Sales API project consists a couple of the endpoints to manager customers and address like GET /customers, and GET /address and for a technical evaluation using Java Technology with Spring Boot, RESTFUL, build in Maven archetype and persistence with MariaDB database.
 
 ## Requirements
 

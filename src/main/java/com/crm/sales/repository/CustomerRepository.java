@@ -14,6 +14,6 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
             " inner join Customer_Address ca on ca.customer_id = C.id" +
             " inner join Address a on a.id = ca.address_id" +
             " where zipcode = ?", nativeQuery = true)
-    List<Customer> findCustomeByZipCode(String zipcode);
+    List<Customer> findCustomerByZipCode(String zipcode);
 
 }

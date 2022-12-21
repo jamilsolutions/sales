@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Neymar da Silva Santos\",\r\n    \"age\": \"30\",\r\n    \"address\": [\r\n        {\r\n            \"zipcode\": \"81000-001\",\r\n            \"number\": 100\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"name\": \"Neymar da Silva Santos\",\r\n    \"age\": \"30\",\r\n    \"registration\": \"2022-12-21\",\r\n    \"address\": [\r\n        {\r\n            \"zipcode\": \"81000-001\",\r\n            \"number\": 100\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -45,55 +45,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Neymar da Silva Santos Júnior\",\r\n    \"age\": \"31\",\r\n    \"registration\": \"2022-12-20\",\r\n    \"lastUpdate\": \"2022-12-20\",\r\n    \"address\": [\r\n        {\r\n            \"id\": 1,\r\n            \"zipcode\": \"81000-001\",\r\n            \"number\": 100\r\n        }\r\n    ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8080/sales/customer/update",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"sales",
-								"customer",
-								"update"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "List",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/sales/customers",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"sales",
-								"customers"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"Neymar da Silva Santos Júnior A\",\r\n    \"age\":30,\r\n    \"address\": [{\r\n        \"id\":1,\r\n        \"zipcode\":\"81000-000\",\r\n        \"number\":100\r\n    }]\r\n}",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Neymar da Silva Santos Júnior\",\r\n    \"age\": \"31\",\r\n    \"registration\": \"2022-12-22\",\r\n    \"address\": [\r\n        {\r\n            \"id\": 1,\r\n            \"zipcode\": \"81000-001\",\r\n            \"number\": 100\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -121,14 +73,57 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/sales/customers",
+							"raw": "localhost:8080/sales/customer/find/81000-001",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"sales",
-								"customers"
+								"customer",
+								"find",
+								"81000-001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/sales/customer/list",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"customer",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/sales/customer/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"customer",
+								"delete",
+								"1"
 							]
 						}
 					},

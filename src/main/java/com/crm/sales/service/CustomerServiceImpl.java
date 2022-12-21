@@ -52,7 +52,7 @@ public class CustomerServiceImpl implements CustomerService {
 	}
 	
 	public List<Customer> findByZipcode(String zipcode) {
-		return customerRepository.findCustomeByZipCode(zipcode);
+		return customerRepository.findCustomerByZipCode(zipcode);
 	}
 
 	private String convertToJson(Customer customer) throws JsonProcessingException {
