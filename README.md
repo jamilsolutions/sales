@@ -43,14 +43,14 @@ Sales API project consists a couple of the endpoints to manager customers and ad
 > - MAVEN_HOME=C:/Programas/Apache/apache-maven-3.8.6
 > - PATH=%MAVEN_HOME%/bin
 
-9. Open Postman and import the Secure collection Sales.postman_collection.json:
+9. Open Postman and import the Secure collection "API Sales REST.postman_collection.json" file:
 ```bash
 Postman -> File -> Import -> Select folder or Upload the file -> Confirm import.
 ```
 
 10. Run the collection Sales:
 ```bash
-Run Collection Runner -> Run Sales.
+Run Collection Runner -> Run the "API Sales REST".
 ```
 
 
